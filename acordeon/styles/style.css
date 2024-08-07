@@ -1,0 +1,120 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+section{
+  width: 100%;
+  max-width: 50em;
+  margin: 1em auto;
+}
+
+img{
+  width: 100%;
+  height: 30em;
+  object-fit: cover;
+  border-image: 1px ;
+}
+
+input{
+  display: none;
+}
+
+label{
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: aliceblue;
+  border: 1px solid black;
+  line-height: 4em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;
+}
+
+.contenedor1{
+  position: relative;
+  overflow: hidden;
+  height: 0em;
+  transition: 0.5s;
+
+  h1{
+    position: absolute;
+    right: 1em;
+    font-size: 2.3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  p{
+    position: absolute;
+    bottom: 2em;
+    background: #ffffff9f;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0.5em 3em;
+  }
+}
+
+.contenedor2{
+  overflow: hidden;
+  height: 0em;
+  position: relative;
+  transition: 0.5s;
+  h1{
+    position: absolute;
+    right: 1em;
+    font-size: 2.3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  p{
+    position: absolute;
+    bottom: 2em;
+    background: #ffffff9f;
+    text-align: center;
+    font-weight: 400;
+    padding: 0.5em 3em;
+  }
+}
+
+.contenedor3{
+  overflow: hidden;
+  height: 0em;
+  transition: 0.5s;
+  position: relative;
+  h1{
+    position: absolute;
+    right: 1em;
+    font-size: 2.3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  p{
+    position: absolute;
+    bottom: 2em;
+    background: #ffffff9f;
+    text-align: center;
+    font-weight: 400;
+    padding: 0.5em 3em;
+  }
+}
+
+#bloque1:checked ~ .contenedor1{
+  height: 30em;
+  border-bottom: 1px solid black;
+  border-inline: 1px solid black;
+}
+
+#bloque2:checked ~ .contenedor2{
+  height: 30em;
+  border-bottom: 1px solid black;
+  border-inline: 1px solid black;
+}
+
+#bloque3:checked ~ .contenedor3{
+  height: 30em;
+  border-bottom: 1px solid black;
+  border-inline: 1px solid black;
+}
+
